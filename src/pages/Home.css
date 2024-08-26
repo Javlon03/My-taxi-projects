@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: backgroundChange 15s infinite;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url(https://st4.depositphotos.com/20306810/25677/i/450/depositphotos_256773412-stock-photo-taxi-sign-roof-taxi-night.jpg);
+  }
+  33% {
+    background-image: url(https://st4.depositphotos.com/20306810/25677/i/450/depositphotos_256773412-stock-photo-taxi-sign-roof-taxi-night.jpg);
+  }
+  66% {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkk78RXIlakLtzBGcrWoW3S2dVG3w-ge01iA&s);
+  }
+  100% {
+    background-image: url(https://www.shutterstock.com/image-photo/happy-middle-aged-business-man-600w-2306186897.jpg);
+  }
+}
+
+.home-content {
+  color: white;
+  text-align: center;
+  z-index: 2;
+  background-color: transparent;
+}
+.contact-button {
+  padding: 10px 20px;
+  background-color: #f29f05;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: #d88a05;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.service-item {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+}
+
+.service-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.service-item p {
+  color: #666;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 45%;
+  height: auto;
+  margin: 10px;
+}
+
+.header-section {
+  margin-bottom: 50px;
+}
+
+.header-section h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.invitation-text {
+  font-size: 1.5em;
+  color: #555;
+}
+
+.ceo-signature {
+  font-size: 1.2em;
+  color: #777;
+  font-style: italic;
+}
+
+.service-section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.service-section h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.service-description {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+}
+
+.images-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-image {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.new-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.new-section .header h2 {
+  color: #ff7e00;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.new-section .header h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.new-section .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.new-section .service {
+  flex-basis: calc(33.333% - 20px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.new-section .service img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.new-section .service-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.new-section .contact {
+  margin-top: 40px;
+}
+
+.new-section .contact button {
+  background-color: #ff7e00;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.new-section .contact button:hover {
+  background-color: #e06900;
+}
+
+.new-section .footer {
+  margin-top: 50px;
+}
+
+.new-section .footer h2 {
+  color: #ff7e00;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.new-section .footer p {
+  font-size: 18px;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 1.8em;
+  }
+
+  .service-item {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-gallery img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .images-section {
+    gap: 10px;
+  }
+
+  .service-image {
+    width: 90%;
+  }
+
+  .new-section .services {
+    flex-direction: column;
+  }
+
+  .new-section .service {
+    flex-basis: 100%;
+  }
+}
